@@ -1,0 +1,241 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: 0.1s all ease-in-out;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body {
+    font-size: 1.3rem;
+  }
+  section {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    position: relative;
+  }
+  aside {
+    flex: 0 1 15%;
+  }
+  
+  .products-container {
+    flex: 0 1 85%;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding: 2rem 13%;
+  }
+  
+  aside {
+    padding: 2rem;
+    border-right: 0.1rem solid #dddd;
+  }
+  aside button {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #dddd;
+    margin: 0.5rem;
+  }
+  
+  .active {
+    background-color: #dca304;
+    color: #fff;
+  }
+  .product-card {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 0.1rem solid #dddd;
+    position: relative;
+    max-height: 40rem;
+  }
+  .product-card figure {
+    width: 100%;
+  }
+  .product-card figure span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  .product-card figure img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .product-card button {
+    background-color: #333;
+    padding: 0.8rem 3.2rem;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+  }
+  .product-card button:hover {
+    background-color: #f5b70a;
+  }
+  
+  .product-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+  .product-price {
+    margin: 2rem 0;
+    font-weight: 600;
+  }
+  
+  .nomoreproducts h2 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .nomoreproducts {
+    width: 100%;
+    grid-column: span 4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nomoreproducts figure {
+    width: 50%;
+  }
+  .nomoreproducts figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .cart-product {
+    display: flex;
+    position: relative;
+    color: #fff;
+    border: 0.1rem solid grey;
+    margin-bottom: 1rem;
+  }
+  
+  .cart-product button {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    border: none;
+    padding: none;
+  }
+  .usercart-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: 300px;
+    padding: 2rem;
+    background-color: #333;
+  }
+  
+  .usercart-container header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 1rem;
+    border-bottom: 0.1rem solid grey;
+  }
+  .usercart-container header span {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 1rem;
+  }
+  .usercart-container header figure {
+    position: relative;
+    margin-right: 1rem;
+  }
+  #product-count {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -1rem;
+    right: -2rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #f9b908;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .product-information {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  
+  .cart-product img {
+    width: 8rem;
+  }
+  .cart-product .product-information {
+    flex: 0 1 60%;
+  }
+  
+  .total-amount-container {
+    margin: 2rem 0;
+    font-size: 2.3rem;
+    color: #fff;
+    font-weight: 700;
+  }
+  .cartopener {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    padding: 2rem;
+    z-index: 1000;
+  }
+  .cartopener #product-count {
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .checkout {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    border: 0.1rem solid #ddd;
+    padding: 0.8rem;
+    text-align: center;
+  }
+  .cart-product {
+    max-height: 8rem;
+  }
+  
+  .price-filter-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 13%;
+  }
+  
+  
